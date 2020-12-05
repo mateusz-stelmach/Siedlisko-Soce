@@ -29,7 +29,8 @@ $base-color:#A5D7FD;
         align-items: center;
         float: left;
         color: white;
-        padding-top: 90%;
+        padding-top: 25%;
+        padding-left: 8%;
         z-index: -2;
         
 
@@ -395,10 +396,16 @@ footer{
     
    
     .hero{
-        background-position: 55% -200px;
-
+        background-position: 55% 0px;
+        min-height: 100vh;
+        z-index: 5;
+       
         .hero_text{
-            padding: 65% 0 auto;
+            position: absolute;
+            top: 70%;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
             float: none;
 
             h1{
@@ -419,6 +426,7 @@ footer{
         padding: 10px 0;
         position: fixed;
         top: 0;
+        z-index: 100;
         
         .logo{
             width: 80px;
