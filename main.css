@@ -209,7 +209,7 @@ header ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 40px 15px 40px 15px;
+  margin: 40px 15px;
 }
 
 .oferta h1 {
@@ -318,8 +318,6 @@ header ul li a:hover {
   margin: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 5px 3px 10px -3px #000000b2;
-  box-shadow: 5px 3px 10px -3px #00000098;
 }
 
 .rezerwacja {
@@ -419,5 +417,197 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 864px) {
+  .hero {
+    background-position: 55% -200px;
+  }
+  .hero .hero_text {
+    margin: 65% auto;
+    float: none;
+  }
+  .hero .hero_text h1 {
+    font-size: 2.3em;
+  }
+  .hero .hero_text button {
+    width: 10em;
+    height: 2.2em;
+  }
+  .text_right, .text_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: 1em auto;
+    min-height: 0;
+    padding: 0;
+  }
+  .text_right .img-container, .text_left .img-container {
+    height: 325px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .text_right .img-container img, .text_left .img-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .text_left {
+    margin-left: 0;
+  }
+  .text_left h1 {
+    font-size: 3.8em;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px 10px;
+  }
+  .text_left p {
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+  .text_left p:nth-of-type(2) {
+    margin-top: 10px;
+  }
+  .text_right {
+    padding-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .text_right h1 {
+    font-size: 3.8em;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px 10px;
+  }
+  .text_right p {
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+  .text_right p:nth-of-type(2) {
+    margin-top: 10px;
+  }
+  .img-100vw {
+    width: 100vw;
+    height: 275px;
+  }
+  .oferta {
+    margin: 20px 5px;
+  }
+  .oferta h1 {
+    font-size: 3.8em;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px 10px;
+  }
+  .offer-wrapper {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .offer-wrapper .offer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 5px;
+  }
+  .offer-wrapper .offer-container h2 {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .offer-wrapper .offer-container table {
+    height: 250px;
+    margin: 0px;
+  }
+  .offer-wrapper p {
+    width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+  .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 5px auto;
+  }
+  .galeria .gallery-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+  }
+  .galeria img {
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+  }
+  .rezerwacja {
+    height: 275px;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .rezerwacja .rezerwacja-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .rezerwacja .rezerwacja-wrapper h1 {
+    font-size: 3.8em;
+    margin: 5px auto;
+    padding: 5px 10px;
+  }
+  .rezerwacja .rezerwacja-wrapper a {
+    margin-top: 40px;
+  }
+  .kontakt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px auto;
+  }
+  .kontakt .text-wrapper h1 {
+    font-size: 3.8em;
+    margin: 5px auto;
+  }
+  .kontakt .map iframe {
+    width: 100%;
+    height: 350px;
+    margin: 20px auto;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
