@@ -9,6 +9,7 @@
 }
 
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -127,6 +128,7 @@ header ul li a:hover {
 
 .nav-scrolled {
   background-color: #A5D7FD;
+  margin: 0;
   border: none;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
@@ -466,7 +468,8 @@ footer a {
 
 @media screen and (max-width: 864px) {
   .hero {
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     position: relative;
     background-position: 55% 0px;
     z-index: 5;
@@ -488,23 +491,31 @@ footer a {
   }
   header {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     top: 0%;
     left: 0;
-    width: 100%;
-    height: 13vh;
-    margin: 0px auto;
-    padding: 0px 5px;
+    max-width: 100%;
+    height: 19vh;
+    margin: 0;
+    padding: 0px 5px 10px 5px;
   }
   header .logo {
-    width: 80px;
-    width: 80px;
+    width: 75px;
+    width: 75px;
   }
   header ul {
     position: absolute;
-    top: 13vh;
+    top: 19vh;
     right: 0;
     height: 50vh;
-    width: 55vw;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
     background-color: #A5D7FD;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -535,14 +546,15 @@ footer a {
             transform: translateX(0);
   }
   header .burger {
-    padding-right: 2em;
+    padding-right: 3em;
     cursor: pointer;
+    margin: 0;
   }
   header .burger div {
     width: 25px;
     height: 3px;
     background-color: white;
-    margin: 5px;
+    margin: 5px 0;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
   }
@@ -699,8 +711,9 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     margin: 5px auto;
+    overflow-x: hidden;
   }
   .galeria .gallery-wrapper {
     -ms-grid-columns: (1fr)[2];
