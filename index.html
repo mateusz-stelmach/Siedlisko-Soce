@@ -48,7 +48,7 @@
         </header>
         <div class="hero_text">
             <h1>Siedlisko Soce</h1>
-            <a href="#domownicy"><button>poznajmy się!</button></a>
+            <a href="#domownicy" class="anchor"><button>poznajmy się!</button></a>
         </div> 
 
     </div>
@@ -221,12 +221,40 @@
                     next: 'next »',
                     previous: '« previous'
                 },
-                variant: 'featherlight-gallery2'
+                variant: 'featherlight-gallery'
             });
         });
     </script>
 
     <script src="assets/js/lazysizes.min.js" async></script>
+
+
+    <!-- //offest to anchors to see heading of each section -->
+    <script> 
+        (function($, window) {
+            var adjustAnchor = function() {
+
+                var $anchor = $(':target'),
+                        fixedElementHeight = 80;
+
+                if ($anchor.length > 0) {
+
+                    $('html, body')
+                        .stop()
+                        .animate({
+                            scrollTop: $anchor.offset().top - fixedElementHeight
+                        }, 200);
+
+                }
+
+            };
+
+            $(window).on('hashchange load', function() {
+                adjustAnchor();
+            });
+
+        })(jQuery, window);
+    </script>
 
 </body>
 </html>
