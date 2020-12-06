@@ -56,3 +56,51 @@ heroOptions);
 
 heroObserver.observe(hero);
 
+//gsap animations
+
+let tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:".hero",
+        start:"center bottom"
+    }
+})
+tl.from("header", {opacity:0, duration:2})
+.from("li", {x:100, duration: 1, stagger: 0.25}, "-0.7")
+.from(".hero_text", {y: 50, opacity: 0, duration: 1}, "0.5")
+
+
+let tl1 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#domownicy",
+        start:"250px bottom"        
+    }
+})
+tl1.from(".text-container-left", {x:-20 , opacity:0, duration:1})
+.from(".text_left img", {x:20, opacity:0, duration: 1}, "-0.5")
+
+let tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#siedlisko",
+        start:"250px bottom"
+    }
+})
+tl2.from(".text-container-right", {x:20 , opacity:0, duration:1})
+.from(".text_right img", {x:-20, opacity:0, duration: 1}, "-0.5")
+
+let tl3 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#offer",
+        start:"200px bottom"        
+    }
+})
+tl3.from(".offer-container", {y:20 , opacity:0, duration:0.8, stagger: 1.5})
+
+
+let tl4 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".rezerwacja",
+        start:"center bottom"
+    }
+})
+tl4.from(".rezerwacja-wrapper h1", {x:20 , opacity:0, duration:1})
+.from(".rezerwacja-wrapper h2", {y:20, opacity:0, duration: 0.8, stagger:0.5}, "-0.1")

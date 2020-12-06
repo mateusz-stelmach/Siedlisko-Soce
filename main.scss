@@ -11,6 +11,9 @@ $base-color:#A5D7FD;
     scroll-behavior: smooth;    
 }
 
+body{
+    overflow-x: hidden;
+}
 
 .hero{
     height: 100vh;
@@ -115,7 +118,7 @@ header{
 .nav-scrolled{
     background-color: $base-color;
     border: none;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
     -webkit-box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.562);
     box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.555);
     
@@ -231,7 +234,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 3em auto;
+    margin: 1em auto;
 
     .offer-container{
         display: grid;
@@ -299,17 +302,32 @@ header{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        column-gap: 2px;
+        column-gap: 0px;
         justify-items: center;
-        align-items: center;        
+        align-items: center;  
+        
+        a {
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            transition: all 0.3s ease-in;
+
+            &:hover{
+                transform: scale(1.05);
+                -webkit-box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.692);
+                box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.719);
+
+            }
+            
+            img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }    
+        }
     }
 
-    img{
-        width: 250px;
-        height: 250px;
-        margin: 20px;
-        object-fit: cover;    
-    }
+    
 }
 
 .rezerwacja{
@@ -450,7 +468,7 @@ footer{
             position: absolute;
             top: 13vh;
             right: 0;
-            height: 40vh;
+            height: 50vh;
             width: 55vw;
             background-color: $base-color;
             display: flex;
@@ -461,7 +479,7 @@ footer{
             transition: transform .5s ease-in;
             
             li{
-                margin: 15px 0;
+                margin: 20px 0;
                 opacity: 0;
             }
 
@@ -631,14 +649,21 @@ footer{
         .gallery-wrapper{
             
             grid-template-columns: repeat(2, 1fr);
-            column-gap: 0px;
-        }
+            column-gap: 2px;
 
-        img{
-            width: 170px;
-            height: 170px;
-            margin: 5px;
-        }
+            a{
+                width: 170px;
+                height: 170px;
+                margin: 5px 0; 
+            
+                img{
+                    width: 170px;
+                    height: 170px;
+                }
+            }       
+            
+
+        }        
     }
 
     .rezerwacja{
