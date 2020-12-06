@@ -93,7 +93,7 @@ let tl3 = gsap.timeline({
         start:"200px bottom"        
     }
 })
-tl3.from(".offer-container", {y:20 , opacity:0, duration:0.8, stagger: 1.5})
+tl3.from(".offer-container", {y:20 , opacity:0, duration:0.8, stagger: 1})
 
 
 let tl4 = gsap.timeline({
