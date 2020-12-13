@@ -22,9 +22,7 @@ const navSlide =() =>{
         //burger animation
         burger.classList.toggle('toggle');
 
-    });
-
-    //animate links in nav
+    });    
     
 }
 
@@ -35,9 +33,11 @@ navSlide();
 
 const header = document.querySelector('header');
 const hero = document.querySelector('.hero');
+const logo = document.querySelector('.logo');
+
 
 const heroOptions={
-    rootMargin: "-170px 0px 0px 0px"
+    rootMargin: "-280px 0px 0px 0px"
 };
 
 const heroObserver = new IntersectionObserver(function(
@@ -46,9 +46,12 @@ const heroObserver = new IntersectionObserver(function(
 ){
     entries.forEach(entry => {
         if(!entry.isIntersecting){
-            header.classList.add('nav-scrolled');   
+            header.classList.add('nav-scrolled');
+            logo.style.display="none";            
+               
         } else{
             header.classList.remove('nav-scrolled');
+            logo.style.display="flex";
         };
     })
 },
