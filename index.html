@@ -38,6 +38,7 @@
                     <li><a id="obiekt" href="#siedlisko">siedlisko</a></li>
                     <li><a id="oferta" href="#offer">oferta</a></li>
                     <li><a id="galeria" href="#gallery">galeria</a></li>
+                    <li><a id="faq" href="#faqu">faq</a></li>
                     <li><a id="kontakt" href="#contact">kontakt</a></li>
                 </ul>
                 <div class="burger">
@@ -49,7 +50,7 @@
         </header>
         <div class="hero_text">
             <h1>Siedlisko Soce</h1>
-            <a href="#offer" class="anchor"><button>zarezerwuj!</button></a>
+            <a href="#contact" class="anchor"><button>zarezerwuj!</button></a>
         </div> 
 
     </div>
@@ -177,6 +178,59 @@
 
             </div>
         </section>
+        <section class="faq" id="faqu">
+            <h1>FAQ</h1>
+            <div class="faq-wrapper">
+                <button class="collapsible">1. Z jakim wyprzedzeniem warto zamówić DJa? </button>
+                <div class="content">
+                <p>Sezon weselny skupia się głównie na miesiącach od kwietnia do września w związku z tym ilość weekendów jest ograniczona. Najczęściej Pary Młode rezerwują termin z dłuższym wyprzedzeniem- około roku przed planowaną datą wesela. 
+                </p>
+                </div>
+
+                <button class="collapsible">2. Do ilu km od Poznania Pan dojeżdża?</button>
+                <div class="content">
+                <p>Dojeżdżam do 150 km od Poznania w jedną stronę bez noclegu,  powyżej tej odległości proszę Parę Młodą o nocleg.  
+                </p>
+                </div>
+
+                <button class="collapsible">3. Od czego zależy cena?</button>
+                <div class="content">
+                <p>Cena uzależniona jest od szacowanej ilości gości na weselu oraz od odległości do miejsca uroczystości.  
+                </p>
+                </div>
+
+                <button class="collapsible">4. Jak wygląda sprawa płatności?</button>
+                <div class="content">
+                <p>W dniu podpisania umowy uiszczają Państwo zadatek w wysokości 300zł, pozostała część jest płatna w dniu wesela. 
+                </p>
+                </div>
+
+                <button class="collapsible">5. Czy możemy zaproponować swoje utwory?</button>
+                <div class="content">
+                <p>Oczywiście! W ramach umówionej ceny mogą Państwo przygotować do 40 swoich propozycji muzycznych. 
+                </p>
+                </div>
+
+                <button class="collapsible">6. Czy możemy zaproponować swoje zabawy / pomysły na oczepiny?</button>
+                <div class="content">
+                <p>Tak,  jak najbardziej. Dostosowuje się do każdej uroczystości indywidualnie – to Para Młoda decyduje, jakie atrakcje i zabawy chce mieć na własnym weselu. Oczywiście chętnie dzielę się doświadczeniem  oraz swoimi przemyśleniami . Wspólnie omawiamy cały scenariusz weselny. Posiadam w swojej ofercie około 20 zabaw – chętnie zaproponuje swoje sprawdzone. 
+                </p>
+                </div>
+
+                <button class="collapsible">7. Jak dokonać rezerwacji terminu?</button>
+                <div class="content">
+                <p>Telefonicznie lub na wspólnym spotkaniu. Potwierdzeniem rezerwacji terminu jest dla mnie podpisanie umowy z Młodą Parą oraz wpłacenie zaliczki. 
+                </p>
+                </div>
+
+                <button class="collapsible">8. Czy koszt Pana dojazdu jest wliczony w cenę?</button>
+                <div class="content">
+                <p>Tak, koszt dojazdu  wliczam w cenę końcową, jaką Państwu przekazuje. 
+                </p>
+                </div>
+            </div>        
+        </section>
+
         <section class="rezerwacja">
             <div class="rezerwacja-wrapper">
                 <h1>zarezerwuj</h1>
@@ -206,7 +260,7 @@
                               
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.013674338958!2d23.407318215251085!3d52.948176979897426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47201bcb7a94c321%3A0x8cef342b1a0d00dd!2sSiedlisko%20Soce!5e0!3m2!1spl!2spl!4v1606863946505!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d258540.0452397631!2d23.173600459234994!3d52.98460033255718!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8cef342b1a0d00dd!2sSiedlisko%20Soce!5e0!3m2!1spl!2spl!4v1610188795181!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>     
     </main>
@@ -274,6 +328,24 @@
         })(jQuery, window);
     </script>    
 
+    <!-- faq -->
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
        
 
 </body>
