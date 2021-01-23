@@ -68,7 +68,7 @@ let tl = gsap.timeline({
     }
 })
 tl.from("header", {opacity:0, duration:2})
-.from("li", {x:100, duration: 1, stagger: 0.25}, "-0.7")
+.from(".nav-items li", {x:100, duration: 1, stagger: 0.15}, "-0.7")
 .from(".hero_text", {y: 50, opacity: 0, duration: 1}, "0.5")
 
 
@@ -78,8 +78,8 @@ let tl1 = gsap.timeline({
         start:"250px bottom"        
     }
 })
-tl1.from(".text-container-left", {x:-20 , opacity:0, duration:1})
-.from(".text_left img", {x:20, opacity:0, duration: 1}, "-0.5")
+tl1.from(".domownicy-text-gsap", {x:-20 , opacity:0, duration:1})
+.from(".domownicy-img-gsap", {x:20, opacity:0, duration: 1}, "-0.5")
 
 let tl2 = gsap.timeline({
     scrollTrigger:{
@@ -87,23 +87,41 @@ let tl2 = gsap.timeline({
         start:"250px bottom"
     }
 })
-tl2.from(".text-container-right", {x:20 , opacity:0, duration:1})
-.from(".text_right img", {x:-20, opacity:0, duration: 1}, "-0.5")
+tl2.from(".siedlisko-text-gsap", {x:20 , opacity:0, duration:1})
+.from(".siedlisko-img-gsap", {x:-20, opacity:0, duration: 1}, "-0.5")
 
 let tl3 = gsap.timeline({
     scrollTrigger:{
-        trigger:"#offer",
-        start:"200px bottom"        
+        trigger:"#kuchnia",
+        start:"200px bottom"
     }
 })
-tl3.from(".offer-container", {y:20 , opacity:0, duration:0.8, stagger: 1})
-
+tl3.from(".kuchnia-text-gsap", {x:20 , opacity:0, duration:1})
+.from(".kuchnia-img-gsap", {x:-20, opacity:0, duration: 1}, "-0.5")
 
 let tl4 = gsap.timeline({
     scrollTrigger:{
-        trigger:".rezerwacja",
+        trigger:".udogodnienia",
+        start:"150px bottom"        
+    }
+})
+tl4.from(".udogodnienia-wrapper li", {y:20 , opacity:0, duration:0.5, stagger: 0.15})
+
+
+let tl5 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#price",
+        start:"200px bottom"        
+    }
+})
+tl5.from(".price-container", {y:20 , opacity:0, duration:0.8, stagger: 1})
+
+
+let tl6 = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#book",
         start:"center bottom"
     }
 })
-tl4.from(".rezerwacja-wrapper h1", {x:20 , opacity:0, duration:1})
-.from(".rezerwacja-wrapper h2", {y:20, opacity:0, duration: 0.8, stagger:0.5}, "-0.1")
+tl6.from(".rezerwacja-wrapper h1", {x:20 , opacity:0, duration:1})
+.from(".rezerwacja-wrapper h2", {y:20, opacity:0, duration: 1, stagger:0.8}, "-0.1")
