@@ -2,8 +2,6 @@ const navSlide =() =>{
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('ul');
     const navLinks = document.querySelectorAll('li');
-
-
    
     burger.addEventListener('click', ()=>{
         
@@ -21,12 +19,13 @@ const navSlide =() =>{
 
         //burger animation
         burger.classList.toggle('toggle');
-
     });    
     
 }
 
 navSlide();
+
+
 
 
 //nav color background change on scroll

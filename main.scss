@@ -168,6 +168,10 @@ header {
     }
   }
 }
+.nav-items .active-link a {
+  color: black;
+  border-top: 4px solid black;
+}
 
 .text_right,
 .text_left {
@@ -1133,9 +1137,8 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 50px 0;
     overflow: hidden;
-
     padding: 0;
 
     .btnContainer {
@@ -1150,18 +1153,17 @@ footer {
       align-items: center;
       justify-content: center;
       margin: 10px 0;
-      padding: 0 5px;
+      padding: 0px 0px;
 
       .column {
         float: none;
         width: 100%;
-        margin: 0;
       }
 
       .content {
         width: 200px;
         height: 200px;
-        padding: 5px;
+        padding: 0px;
         img {
           width: 200px;
           height: 200px;

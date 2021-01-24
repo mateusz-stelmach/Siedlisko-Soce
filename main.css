@@ -198,6 +198,11 @@ header ul li a:hover {
   border-top: 4px solid black;
 }
 
+.nav-items .active-link a {
+  color: black;
+  border-top: 4px solid black;
+}
+
 .text_right,
 .text_left {
   display: -ms-grid;
@@ -1270,7 +1275,7 @@ footer a {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 50px 0;
     overflow: hidden;
     padding: 0;
   }
@@ -1295,17 +1300,16 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 10px 0;
-    padding: 0 5px;
+    padding: 0px 0px;
   }
   .galeria .row .column {
     float: none;
     width: 100%;
-    margin: 0;
   }
   .galeria .row .content {
     width: 200px;
     height: 200px;
-    padding: 5px;
+    padding: 0px;
   }
   .galeria .row .content img {
     width: 200px;
