@@ -170,7 +170,7 @@ header {
 }
 .nav-items .active-link a {
   color: black;
-  border-top: 4px solid black;
+  border-top: 2px solid black;
 }
 
 .text_right,
@@ -418,12 +418,12 @@ header {
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: 1;
   margin: 30px 0;
+  padding: 0;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
   display: none; /* Hide columns by default */
 }
 
@@ -437,7 +437,6 @@ header {
 /* Content */
 .content {
   background-color: white;
-  padding: 10px;
   height: 250px;
   width: 250px;
 
@@ -445,6 +444,7 @@ header {
     height: 250px;
     width: 250px;
     object-fit: cover;
+    padding: 10px;
   }
 }
 
@@ -603,8 +603,8 @@ footer {
 @media screen and (min-width: 1281px) {
   .hero .hero_text {
     color: white;
-    padding-top: 27%;
-    padding-left: 10%;
+    padding-top: 25%;
+    padding-left: 15%;
     z-index: -2;
 
     h1 {
@@ -663,7 +663,7 @@ footer {
     align-items: center;
 
     .img-container {
-      height: 600px;
+      height: 700px;
       width: 100%;
       margin-top: 50px;
       z-index: -2;
@@ -685,29 +685,36 @@ footer {
     }
 
     p {
-      width: 80%;
-      margin-top: -60px;
+      width: 90%;
+      margin-top: -65px;
       font-size: 1.2em;
     }
   }
 
   .text_right {
     margin-bottom: 3em;
+    margin-top: 3em;
 
     h1 {
       font-size: 7em;
     }
 
     p {
-      width: 90%;
-      float: left;
+      width: 95%;
+      float: right;
       font-size: 1.2em;
       font-weight: normal;
       text-align: justify;
       padding-left: 50px;
-      margin-top: -60px;
+
+      &:nth-of-type(1) {
+        margin-top: -65px;
+      }
 
       &:nth-of-type(2) {
+        margin-top: 15px;
+      }
+      &:nth-of-type(3) {
         margin-top: 15px;
       }
     }
@@ -744,6 +751,76 @@ footer {
     }
   }
 
+  .price-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em 0px;
+
+    h1 {
+      font-size: 6em;
+      color: $base-color;
+      z-index: -1;
+      margin-top: 40px;
+      margin-left: 70px;
+    }
+
+    .price-container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      align-items: center;
+      width: 100%;
+      margin: 25px 0;
+      padding-right: 70px;
+
+      h2 {
+        font-size: 1.2em;
+        text-align: center;
+        margin-right: 70px;
+      }
+
+      table {
+        height: 200px;
+        border-collapse: collapse;
+
+        td,
+        th {
+          text-align: center;
+        }
+
+        th {
+          border: 1px solid black;
+          &:nth-of-type(1) {
+            border: none;
+          }
+          &:nth-of-type(2) {
+            border-top: none;
+          }
+          &:nth-of-type(3) {
+            border-top: none;
+            border-right: none;
+          }
+        }
+
+        td {
+          border-right: 1px solid black;
+          border-top: 1px solid black;
+          &:last-of-type {
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    p {
+      width: 100%;
+      margin: 10px 70px;
+      font-size: 1em;
+      text-align: left;
+      padding-right: 50px;
+    }
+  }
+
   .galeria {
     padding: 0 70px;
 
@@ -751,21 +828,24 @@ footer {
       column-gap: 10px;
       row-gap: 10px;
 
-      a {
-        width: 280px;
-        height: 280px;
-        margin: 10px 15px;
+      .content {
+        background-color: white;
+        height: 350px;
+        width: 350px;
+
         img {
-          width: 280px;
-          height: 280px;
+          height: 350px;
+          width: 350px;
           object-fit: cover;
+          padding: 15px;
         }
       }
     }
   }
 
   .rezerwacja {
-    padding: 20px 70px;
+    padding: 50px 70px;
+    height: 35vh;
     .rezerwacja-wrapper {
       justify-content: space-evenly;
       h1 {
@@ -773,12 +853,13 @@ footer {
       }
 
       a {
-        font-size: 1.2em;
+        font-size: 4em;
       }
     }
   }
 
   .kontakt {
+    height: 83vh;
     .text-wrapper {
       h1 {
         font-size: 7em;
@@ -786,6 +867,13 @@ footer {
 
       p {
         font-size: 1.2em;
+        text-align: left;
+      }
+
+      .contactHref {
+        display: block;
+        margin: 15px auto;
+        padding-left: 50px;
       }
 
       a svg {
@@ -800,7 +888,7 @@ footer {
       iframe {
         justify-items: center;
         width: 100%;
-        height: 500px;
+        height: 650px;
         padding: 0 70px;
       }
     }
@@ -826,7 +914,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 975px) {
   .hero {
     width: 100%;
     position: relative;
@@ -857,7 +945,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 14vh;
+    height: 100px;
     margin: 0;
     padding: 15px 0px;
     overflow: hidden;
@@ -870,7 +958,7 @@ footer {
 
     ul {
       position: fixed;
-      top: 17.5vh;
+      top: 100px;
       right: 0;
       height: 70vh;
       width: 50vw;
@@ -921,7 +1009,7 @@ footer {
 
   .nav-scrolled {
     background-color: $base-color;
-    height: 11vh;
+    height: 100px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1059,25 +1147,21 @@ footer {
 
   .udogodnienia {
     width: 100%;
-    min-height: 70vh;
+    height: 500px;
     .udogodnienia-wrapper {
       margin: 10px auto;
-      display: flex;
-      align-items: center;
-      justify-items: center;
+
       ul {
-        width: 100%;
         display: flex;
+        width: 100%;
         flex-wrap: wrap;
 
         li {
-          width: 30px;
-          height: 30px;
-          padding: 90px 30px;
+          width: 45px;
+          margin-top: 20px;
+          margin-bottom: 50px;
           justify-content: center;
           align-items: center;
-          align-self: center;
-
           &:nth-of-type(5) {
             display: none;
           }

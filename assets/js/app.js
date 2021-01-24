@@ -27,7 +27,6 @@ navSlide();
 
 
 
-
 //nav color background change on scroll
 
 const header = document.querySelector('header');
@@ -57,6 +56,8 @@ const heroObserver = new IntersectionObserver(function(
 heroOptions);
 
 heroObserver.observe(hero);
+
+
 
 //gsap animations
 
