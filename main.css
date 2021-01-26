@@ -528,6 +528,7 @@ header ul li a:hover {
 /* Content */
 .content {
   background-color: white;
+  padding: 0.3em;
 }
 
 .content img {
@@ -535,7 +536,14 @@ header ul li a:hover {
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 10px;
+  padding: 0em;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.content img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 /* The "show" class is added to the filtered elements */
