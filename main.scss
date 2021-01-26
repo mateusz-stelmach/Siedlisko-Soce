@@ -105,7 +105,7 @@ header {
   justify-content: space-between;
   justify-items: center;
   align-items: center;
-  padding: 0.7em 70px;
+  padding: 0.7em 50px;
   border-bottom: 1px solid white;
   z-index: 10;
 
@@ -129,7 +129,9 @@ header {
 
     li {
       margin: 0 1em;
-
+      &:last-child {
+        margin: 0 0 0 1em;
+      }
       a {
         text-decoration: none;
         color: white;
@@ -142,7 +144,7 @@ header {
           width: 100%;
           opacity: 1;
           color: $base-color;
-          border-top: 4px solid $base-color;
+          border-top: 2px solid $base-color;
         }
       }
     }
@@ -164,13 +166,12 @@ header {
 
     &:hover {
       color: black;
-      border-top: 4px solid black;
+      border-top: 4px solid $base-color;
     }
   }
 }
 .nav-items .active-link a {
-  color: black;
-  border-top: 2px solid black;
+  border-top: 2px solid $base-color;
 }
 
 .text_right,
@@ -395,23 +396,22 @@ header {
   }
 }
 
+.galeria-heading {
+  font-size: 6em;
+  color: $base-color;
+  z-index: -1;
+  margin-top: 40px;
+  margin-left: 50px;
+  text-align: left;
+}
+
 .galeria {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin: 50px 0;
-  padding: 0px 50px;
-
-  h1 {
-    font-size: 6em;
-    color: $base-color;
-    z-index: -1;
-    margin-top: 40px;
-    margin-left: 0em;
-    text-align: left;
-  }
+  margin: 50px 50px;
 }
 
 .btnContainer {
@@ -422,7 +422,7 @@ header {
 
 .row {
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(4, 25%);
   grid-template-rows: 1;
   margin: 30px 0;
   padding: 0;
@@ -435,21 +435,21 @@ header {
 }
 
 /* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+// .row:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
 
 /* Content */
 .content {
   background-color: white;
-  height: 250px;
-  width: 250px;
+  // height: 250px;
+  // width: 250px;
 
   img {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     padding: 10px;
   }
@@ -506,19 +506,6 @@ header {
       text-decoration: none;
       font-size: 1.1em;
       transition: all 0.3s ease-out;
-      animation: blink 4s ease-in-out infinite;
-
-      @keyframes blink {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
 
       &:hover {
         color: white;
@@ -533,44 +520,48 @@ header {
   width: 100%;
   column-gap: 50px;
   margin: 50px auto;
-  padding: 0 70px;
+  padding: 0 50px;
   justify-items: center;
   align-items: center;
 
   .text-wrapper {
     width: 100%;
+    padding: 0 0px;
 
     h1 {
       display: block;
       font-size: 5.5em;
       color: $base-color;
       text-align: left;
+      margin: 0;
+      padding: 0;
     }
 
     p {
-      width: 55%;
+      width: 100%;
       margin: 10px auto;
       font-size: 1.1em;
-      text-align: left;
-      padding: 5px 50px;
+      text-align: center;
+      padding: 5px 0px;
     }
 
     .contactHref {
-      width: 55%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-decoration: none;
       cursor: pointer;
-      margin-left: 150px;
+      margin: 10px auto;
       color: $base-color;
     }
 
     a {
       svg {
-        display: flex;
-        flex-direction: row;
         width: 50px;
         height: 50px;
         color: $base-color;
-        margin: 30px 10px;
+        margin: 50px 80px;
         transition: color 0.3s ease-in;
 
         &:hover {
@@ -582,6 +573,7 @@ header {
 
   .map {
     width: 100%;
+    padding: 0 50px;
 
     iframe {
       justify-items: center;
@@ -598,6 +590,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.75em;
 
   a {
     text-decoration: none;
