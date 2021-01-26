@@ -266,7 +266,6 @@ header ul li a:hover {
 }
 
 .text_right {
-  height: 100%;
   margin-bottom: 50px;
 }
 
@@ -800,6 +799,7 @@ footer a {
     width: 90%;
     margin-top: -65px;
     font-size: 1.2em;
+    padding-right: 100px;
   }
   .text_right {
     margin-bottom: 3em;
@@ -813,8 +813,8 @@ footer a {
     float: right;
     font-size: 1.2em;
     font-weight: normal;
-    text-align: justify;
-    padding-left: 50px;
+    text-align: left;
+    padding-left: 100px;
   }
   .text_right p:nth-of-type(1) {
     margin-top: -65px;
@@ -948,7 +948,7 @@ footer a {
   }
   .rezerwacja {
     padding: 50px 70px;
-    height: 35vh;
+    height: 30vh;
   }
   .rezerwacja .rezerwacja-wrapper {
     -webkit-box-pack: space-evenly;
