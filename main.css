@@ -470,7 +470,7 @@ header ul li a:hover {
   font-size: 6em;
   color: #a5d7fd;
   z-index: -1;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-left: 50px;
   text-align: left;
 }
@@ -679,13 +679,13 @@ header ul li a:hover {
 
 .kontakt .map {
   width: 100%;
-  padding: 0 50px;
 }
 
 .kontakt .map iframe {
   justify-items: center;
   width: 100%;
   height: 500px;
+  padding: 0 50px;
 }
 
 footer {
@@ -709,7 +709,7 @@ footer a {
   color: white;
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1681px) {
   .hero .hero_text {
     color: white;
     padding-top: 25%;
@@ -737,6 +737,7 @@ footer a {
     left: 0;
     width: 100%;
     height: 16vh;
+    padding: 70px;
   }
   header .logo {
     width: 100px;
@@ -751,9 +752,13 @@ footer a {
   }
   header ul {
     list-style-type: none;
+    padding: 0 0px;
   }
   header ul li {
     margin: 0 2em;
+  }
+  header ul li:last-of-type {
+    margin: 0;
   }
   header ul li a {
     font-size: 1.1em;
@@ -820,6 +825,9 @@ footer a {
   .text_right p:nth-of-type(3) {
     margin-top: 15px;
   }
+  .oferta {
+    padding: 0 70px;
+  }
   .oferta h1 {
     font-size: 7em;
   }
@@ -884,6 +892,7 @@ footer a {
   .price-wrapper .price-container table {
     height: 200px;
     border-collapse: collapse;
+    margin-bottom: 50px;
   }
   .price-wrapper .price-container table td,
   .price-wrapper .price-container table th {
@@ -916,6 +925,9 @@ footer a {
     text-align: left;
     padding-right: 50px;
   }
+  .galeria-heading {
+    margin-left: 70px;
+  }
   .galeria {
     padding: 0 70px;
   }
@@ -924,17 +936,15 @@ footer a {
             column-gap: 10px;
     row-gap: 10px;
   }
-  .galeria .gallery-wrapper .content {
+  .content {
     background-color: white;
-    height: 350px;
-    width: 350px;
   }
-  .galeria .gallery-wrapper .content img {
-    height: 350px;
-    width: 350px;
+  .content img {
+    height: 420px;
+    width: 420px;
     -o-object-fit: cover;
        object-fit: cover;
-    padding: 15px;
+    padding: 10px;
   }
   .rezerwacja {
     padding: 50px 70px;
@@ -946,13 +956,14 @@ footer a {
             justify-content: space-evenly;
   }
   .rezerwacja .rezerwacja-wrapper h1 {
-    font-size: 7em;
+    font-size: 6em;
   }
   .rezerwacja .rezerwacja-wrapper a {
     font-size: 4em;
   }
   .kontakt {
     height: 83vh;
+    padding: 0 70px;
   }
   .kontakt .text-wrapper h1 {
     font-size: 7em;
@@ -960,24 +971,27 @@ footer a {
   .kontakt .text-wrapper p {
     font-size: 1.2em;
     text-align: left;
+    padding-left: 130px;
   }
   .kontakt .text-wrapper .contactHref {
     display: block;
     margin: 15px auto;
-    padding-left: 50px;
+    padding-left: 130px;
   }
   .kontakt .text-wrapper a svg {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
   .kontakt .map {
     width: 100%;
+    margin: 0;
   }
   .kontakt .map iframe {
     justify-items: center;
     width: 100%;
     height: 650px;
     padding: 0 70px;
+    margin: 0;
   }
 }
 
@@ -1326,6 +1340,13 @@ footer a {
     margin: 10px 0;
     text-align: left;
   }
+  .galeria-heading {
+    font-size: 3.3em;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px 10px;
+  }
   .galeria {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1460,11 +1481,14 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .kontakt .map {
+    padding: 0;
+  }
   .kontakt .map iframe {
     width: 100%;
     height: 350px;
     margin: 20px 0px;
-    padding: 0;
+    padding: 0 0;
   }
   footer {
     display: inline-block;
