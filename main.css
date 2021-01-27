@@ -271,7 +271,12 @@ header ul li a:hover {
   margin-left: 20px;
 }
 
-.text_right p {
+.text_right .text-container-right {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.text_right .text-container-right p {
   width: 90%;
   float: right;
   font-size: 1em;
@@ -281,7 +286,7 @@ header ul li a:hover {
   margin-top: 15px;
 }
 
-.text_right p:nth-of-type(1) {
+.text_right .text-container-right p:nth-of-type(1) {
   margin-top: -55px;
 }
 
@@ -665,14 +670,15 @@ header ul li a:hover {
 }
 
 .kontakt .text-wrapper a:not(.contactHref) {
-  margin-left: 4.5em;
+  margin-left: 6em;
+  text-align: center;
 }
 
 .kontakt .text-wrapper a:not(.contactHref) svg {
   width: 50px;
   height: 50px;
   color: #a5d7fd;
-  margin: 50px 2em;
+  margin: 50px 0.9em;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }

@@ -223,6 +223,7 @@ header {
 
 .text_right {
   margin-bottom: 50px;
+
   h1 {
     font-size: 6em;
     color: $base-color;
@@ -232,16 +233,20 @@ header {
     margin-left: 20px;
   }
 
-  p {
-    width: 90%;
-    float: right;
-    font-size: 1em;
-    font-weight: normal;
-    text-align: left;
-    padding-left: 50px;
-    margin-top: 15px;
-    &:nth-of-type(1) {
-      margin-top: -55px;
+  .text-container-right {
+    margin-top: 0;
+    padding-top: 0;
+    p {
+      width: 90%;
+      float: right;
+      font-size: 1em;
+      font-weight: normal;
+      text-align: left;
+      padding-left: 50px;
+      margin-top: 15px;
+      &:nth-of-type(1) {
+        margin-top: -55px;
+      }
     }
   }
 }
@@ -559,12 +564,13 @@ header {
     }
 
     a:not(.contactHref) {
-      margin-left: 4.5em;
+      margin-left: 6em;
+      text-align: center;
       svg {
         width: 50px;
         height: 50px;
         color: $base-color;
-        margin: 50px 2em;
+        margin: 50px 0.9em;
         transition: color 0.3s ease-in;
 
         &:hover {
