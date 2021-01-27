@@ -400,6 +400,11 @@ header ul li a:hover {
   margin-left: 0em;
 }
 
+.price-wrapper a {
+  color: #a5d7fd;
+  text-decoration: none;
+}
+
 .price-wrapper .price-container {
   display: -ms-grid;
   display: grid;
@@ -959,7 +964,7 @@ footer a {
   }
   .rezerwacja {
     padding: 50px 70px;
-    height: 30vh;
+    height: 35vh;
   }
   .rezerwacja .rezerwacja-wrapper {
     -webkit-box-pack: space-evenly;
@@ -967,10 +972,10 @@ footer a {
             justify-content: space-evenly;
   }
   .rezerwacja .rezerwacja-wrapper h1 {
-    font-size: 6em;
+    font-size: 5em;
   }
   .rezerwacja .rezerwacja-wrapper a {
-    font-size: 4em;
+    font-size: 3em;
   }
   .kontakt {
     height: 83vh;
@@ -1068,6 +1073,9 @@ footer a {
   .content img:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
+  }
+  .rezerwacja {
+    padding: 15px 50px;
   }
   .kontakt a:not(.contactHref) {
     display: inline;
@@ -1300,12 +1308,13 @@ footer a {
     margin: 5px auto;
     padding: 5px 10px;
   }
-  .text_right p {
+  .text_right .text-container-right p {
     width: 100%;
     margin: 5px auto;
     padding: 10px;
+    float: left;
   }
-  .text_right p:nth-of-type(1) {
+  .text_right .text-container-right p:nth-of-type(1) {
     margin-top: 10px;
   }
   .img-100vw {
@@ -1511,12 +1520,13 @@ footer a {
             align-items: center;
   }
   .rezerwacja .rezerwacja-wrapper h1 {
-    font-size: 3.3em;
+    font-size: 3em;
     text-align: center;
     margin: 5px 0;
     padding: 5px 0px;
   }
   .rezerwacja .rezerwacja-wrapper a {
+    font-size: 0.8em;
     margin: 40px;
   }
   .kontakt {
@@ -1554,7 +1564,7 @@ footer a {
     color: #a5d7fd;
   }
   .kontakt .text-wrapper a {
-    margin: 10px auto;
+    margin: 0px auto;
     margin-left: 0;
     padding: 0;
     display: -webkit-box;
@@ -1567,7 +1577,7 @@ footer a {
   }
   .kontakt .text-wrapper a svg {
     width: 80px;
-    margin: 20px auto;
+    margin: 10px auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
