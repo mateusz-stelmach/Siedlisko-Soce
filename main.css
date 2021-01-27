@@ -234,13 +234,6 @@ header ul li a:hover {
      object-fit: cover;
 }
 
-.text_left {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
 .text_left h1 {
   font-size: 5.5em;
   color: #a5d7fd;
@@ -332,7 +325,7 @@ header ul li a:hover {
 
 .oferta .offer-wrapper p {
   margin: 15px 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .wyjatki {
@@ -671,16 +664,20 @@ header ul li a:hover {
   color: #a5d7fd;
 }
 
-.kontakt .text-wrapper a svg {
+.kontakt .text-wrapper a:not(.contactHref) {
+  margin-left: 4.5em;
+}
+
+.kontakt .text-wrapper a:not(.contactHref) svg {
   width: 50px;
   height: 50px;
   color: #a5d7fd;
-  margin: 50px 80px;
+  margin: 50px 2em;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
-.kontakt .text-wrapper a svg:hover {
+.kontakt .text-wrapper a:not(.contactHref) svg:hover {
   color: black;
 }
 
@@ -698,7 +695,7 @@ header ul li a:hover {
 footer {
   width: 100%;
   background-color: #a5d7fd;
-  height: 50px;
+  height: 7vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1000,6 +997,86 @@ footer a {
     height: 650px;
     padding: 0 70px;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  /* big landscape tablets, laptops, and desktops */
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100vw;
+    height: 15vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .hero_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: left;
+    color: white;
+    padding-top: 40%;
+    padding-left: 14%;
+    z-index: -2;
+  }
+  .text_left h1 {
+    width: 90%;
+  }
+  .text_left p {
+    padding-right: 20px;
+  }
+  .text_right p {
+    padding-left: 20px;
+  }
+  .price-wrapper {
+    max-width: 970px;
+  }
+  .price-wrapper .price-container {
+    width: 930px;
+    padding-right: 0;
+  }
+  .content {
+    background-color: white;
+    padding: 0.3em;
+  }
+  .content img {
+    height: 225px;
+    width: 225px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0em;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+  .content img:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .kontakt a:not(.contactHref) {
+    display: inline;
+    margin: 0 0 0 4.5em;
+  }
+  .kontakt a:not(.contactHref) svg {
+    width: 50px;
+    height: 50px;
+    color: #a5d7fd;
+    margin: 40px 10px;
+    -webkit-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+  }
+  .kontakt a:not(.contactHref) svg:hover {
+    color: black;
   }
 }
 
@@ -1505,7 +1582,7 @@ footer a {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: center;
-    height: 70px;
+    height: 38px;
   }
 }
 /*# sourceMappingURL=main.css.map */
