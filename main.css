@@ -670,8 +670,8 @@ header ul li a:hover {
 }
 
 .kontakt .text-wrapper a:not(.contactHref) {
-  margin-left: 8em;
-  text-align: center;
+  margin-left: 10em;
+  padding: 0;
 }
 
 .kontakt .text-wrapper a:not(.contactHref) svg {
