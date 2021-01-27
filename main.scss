@@ -564,13 +564,13 @@ header {
     }
 
     a:not(.contactHref) {
-      margin-left: 6em;
+      margin-left: 8em;
       text-align: center;
       svg {
         width: 50px;
         height: 50px;
         color: $base-color;
-        margin: 50px 0.9em;
+        margin: 50px 0;
         transition: color 0.3s ease-in;
 
         &:hover {
