@@ -472,7 +472,7 @@ header ul li a:hover {
   font-size: 6em;
   color: #a5d7fd;
   z-index: -1;
-  margin-top: 80px;
+  margin-top: 0.5em;
   margin-left: 50px;
   text-align: left;
 }

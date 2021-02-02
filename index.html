@@ -16,6 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
     <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="./images/favicon.ico"/>
+    
+
     
 
   <link rel="stylesheet" href="./main.css" rel="preload">  
@@ -31,7 +34,7 @@
 </head>
 <body>
     <div class="preloader">
-        <img src="./images/LOGO.png">
+        <img src="./images/LOGO.png" alt="logo_soce">
     </div>
     <div id="start" class="hero">
         <header>                         
@@ -75,7 +78,7 @@
         </section>
         <section class="text_right" id="siedlisko">
             <div class="img-container">
-                <img src="./images/siedlisko.jpg" alt="nasze_zdjecie" class="siedlisko-img-gsap lazyload">
+                <img src="./images/siedlisko.jpg" alt="nasze_zdjecie_1" class="siedlisko-img-gsap lazyload">
             </div>            
             <div class="text-container-right siedlisko-text-gsap">
                 <h1>siedlisko</h1>
@@ -176,27 +179,27 @@
             <div class="udogodnienia-wrapper">
                 <ul>
                     <li>
-                        <img src="./images/bonfire.svg"/>
+                        <img src="./images/bonfire.svg" alt="icon1"/ >
                         <p>miejsce przyjazne rodzinom</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg"/>
+                        <img src="./images/bonfire.svg" alt="icon2"/>
                         <p>prywatny staw</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg"/>
+                        <img src="./images/bonfire.svg" alt="icon3"/>
                         <p>śniadania z regionalnych produktów</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg"/>
+                        <img src="./images/bonfire.svg" alt="icon4"/>
                         <p>cisza, spokój, brak sąsiadów</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg"/>
+                        <img src="./images/bonfire.svg" alt="icon5"/>
                         <p>wiele tras rowerowych</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg"/>
+                        <img src="./images/bonfire.svg" alt="icon6"/>
                         <p>kontakt z przyrodą</p>        
                     </li>
                     
@@ -455,13 +458,14 @@
                 
             </div>
         </section>
-        <section class="kontakt" id="contact">
-            <div class="text-wrapper">
+        <section class="kontakt" id="contact" itemscope itemtype="https://schema.org/LocalBusiness">
+            <div class="text-wrapper" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                 <h1>kontakt</h1>
-                <p>Soce 171</p>
-                <p>17-210 Narew</p>
-                <a href="tel:+48693392336" class="contactHref">+48 693 392 336</a>
-                <a href="mailto:siedliskosoce@outlook.com" class="contactHref">siedliskosoce@outlook.com</a>  
+                <p><span itemprop="name">Siedlisko Soce</span></p>
+                <p><span itemprop="streetAddress">Soce 171</span></p>
+                <p><span itemprop="addressLocality">17-210 Narew</span></p>
+                <a href="tel:+48693392336" class="contactHref"><span itemprop="telephone">+48 693 392 336</span></a>
+                <a href="mailto:siedliskosoce@outlook.com" class="contactHref" itemprop="email">siedliskosoce@outlook.com</a>  
                
                 <a href="https://www.facebook.com/SoceSiedlisko" target="_blank" >
                     <svg fill="currentColor" width="28" height="28" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" x="2378">
