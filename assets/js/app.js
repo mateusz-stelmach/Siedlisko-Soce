@@ -67,9 +67,9 @@ let tl = gsap.timeline({
         start:"center bottom"
     }
 })
-tl.from("header", {opacity:0, duration:2})
-.from(".nav-items li", {x:100, duration: 1, stagger: 0.15}, "-0.7")
-.from(".hero_text", {y: 50, opacity: 0, duration: 1}, "0.5")
+tl.from("header", {opacity:0, duration:2}, "3")
+.from(".nav-items li", {x:75, opacity:0 , duration: 1.5, stagger: 0.15}, "2")
+.from(".hero_text", {y: 50, opacity: 0, duration: 1.5}, "3")
 
 
 let tl1 = gsap.timeline({

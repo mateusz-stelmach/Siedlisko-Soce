@@ -77,8 +77,8 @@
             </div>
         </section>
         <section class="text_right" id="siedlisko">
-            <div class="img-container">
-                <img src="./images/siedlisko.jpg" alt="nasze_zdjecie_1" class="siedlisko-img-gsap lazyload">
+            <div class="img-container" itemscope itemtype="https://schema.org/ImageObject">
+                <img src="./images/siedlisko.jpg" alt="nasze_zdjecie_1" class="siedlisko-img-gsap lazyload" itemprop="contentUrl">
             </div>            
             <div class="text-container-right siedlisko-text-gsap">
                 <h1>siedlisko</h1>
@@ -179,27 +179,27 @@
             <div class="udogodnienia-wrapper">
                 <ul>
                     <li>
-                        <img src="./images/bonfire.svg" alt="icon1"/ >
+                        <img src="./images/soce_rodzina_01.svg" alt="ikona-rodzina"/ >
                         <p>miejsce przyjazne rodzinom</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg" alt="icon2"/>
+                        <img src="./images/soce_staw_02.svg" alt="ikona-staw"/>
                         <p>prywatny staw</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg" alt="icon3"/>
+                        <img src="./images/soce_sniadanie_03.svg" alt="ikona-sniadania"/>
                         <p>śniadania z regionalnych produktów</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg" alt="icon4"/>
+                        <img src="./images/soce_spokoj_03.svg" alt="ikona-spokoj"/>
                         <p>cisza, spokój, brak sąsiadów</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg" alt="icon5"/>
+                        <img src="./images/soce_rowery_04.svg" alt="ikona-rowry"/>
                         <p>wiele tras rowerowych</p>        
                     </li>
                     <li>
-                        <img src="./images/bonfire.svg" alt="icon6"/>
+                        <img src="./images/soce_przyroda_05.svg" alt="ikona-przyroda"/>
                         <p>kontakt z przyrodą</p>        
                     </li>
                     
@@ -497,7 +497,7 @@
     <script>
         $(document).ready(function() {
         //Preloader
-        preloaderFadeOutTime = 500;
+        preloaderFadeOutTime = 2000;
         function hidePreloader() {
         let preloader = $('.preloader');
         preloader.fadeOut(preloaderFadeOutTime);

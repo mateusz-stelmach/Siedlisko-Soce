@@ -369,10 +369,8 @@ header ul li a:hover {
 }
 
 .udogodnienia .udogodnienia-wrapper ul li img {
-  width: 80px;
-  height: 80px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  width: 75px;
+  height: 75px;
 }
 
 .udogodnienia .udogodnienia-wrapper ul li p {
@@ -1165,6 +1163,9 @@ footer a {
     opacity: 0;
     padding: 0;
   }
+  header ul li:last-child {
+    margin: 20px 1em;
+  }
   header ul.nav-active {
     opacity: 1;
     padding: 0;
@@ -1384,8 +1385,6 @@ footer a {
   .udogodnienia .udogodnienia-wrapper ul li img {
     width: 55px;
     height: 55px;
-    -webkit-filter: invert(1);
-            filter: invert(1);
   }
   .udogodnienia .udogodnienia-wrapper ul li p {
     font-size: 0.8em;
