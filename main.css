@@ -67,6 +67,9 @@ body {
   background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.45), rgba(4, 180, 48, 0)), url("./images/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: 0% 45%;
   background-attachment: fixed;
 }
@@ -295,6 +298,9 @@ header ul li a:hover {
   background-image: url(./images/full-width.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
 }
 

@@ -57,6 +57,9 @@ body {
     url("./images/hero1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: 0% 45%;
   background-attachment: fixed;
 
@@ -256,6 +259,9 @@ header {
   background-image: url(./images/full-width.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
 }
 
