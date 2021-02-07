@@ -178,7 +178,6 @@ header ul li a:hover {
   width: 100%;
   opacity: 1;
   color: #a5d7fd;
-  border-top: 2px solid #a5d7fd;
 }
 
 .nav-scrolled {
@@ -199,11 +198,10 @@ header ul li a:hover {
 
 .nav-scrolled li a:hover {
   color: black;
-  border-top: 4px solid #a5d7fd;
 }
 
 .nav-items .active-link a {
-  border-top: 2px solid #a5d7fd;
+  border-bottom: 2px solid #a5d7fd;
 }
 
 .text_right,
@@ -624,7 +622,7 @@ header ul li a:hover {
   width: 100%;
   -webkit-column-gap: 50px;
           column-gap: 50px;
-  margin: 50px auto;
+  margin: 100px auto;
   padding: 0 50px;
   justify-items: center;
   -webkit-box-align: center;

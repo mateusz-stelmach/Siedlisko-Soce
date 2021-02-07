@@ -144,7 +144,6 @@ header {
           width: 100%;
           opacity: 1;
           color: $base-color;
-          border-top: 2px solid $base-color;
         }
       }
     }
@@ -166,12 +165,11 @@ header {
 
     &:hover {
       color: black;
-      border-top: 4px solid $base-color;
     }
   }
 }
 .nav-items .active-link a {
-  border-top: 2px solid $base-color;
+  border-bottom: 2px solid $base-color;
 }
 
 .text_right,
@@ -530,7 +528,7 @@ header {
   grid-template-columns: 40% 60%;
   width: 100%;
   column-gap: 50px;
-  margin: 50px auto;
+  margin: 100px auto;
   padding: 0 50px;
   justify-items: center;
   align-items: center;

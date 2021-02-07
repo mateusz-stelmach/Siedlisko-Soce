@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /index.html
+
+User-agent: GoogleBot
+Allow: /index.html
+
+User-agent: GoogleBot-Mobile
+Allow: /index.html
+
+User-agent: GoogleBot-Image
+Allow: /index.html
+
+User-agent: Mediapartners-Google
+Allow: /index.html
+
+User-agent: Adsbot-Google
+Allow: /index.html
